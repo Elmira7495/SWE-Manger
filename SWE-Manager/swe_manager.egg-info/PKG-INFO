@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: swe-manager
+Version: 0.1.0
+Summary: SWE-Manager: cluster-based agent selector for SWE-Bench
+Requires-Python: >=3.9

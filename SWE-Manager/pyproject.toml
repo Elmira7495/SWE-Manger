@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swe-manager"
+version = "0.1.0"
+description = "SWE-Manager: cluster-based agent selector for SWE-Bench"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["swe_manager"]
+
+[project.scripts]
+swe-manager = "swe_manager.cli:main"

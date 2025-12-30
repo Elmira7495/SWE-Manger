@@ -1,0 +1,2 @@
+[console_scripts]
+swe-manager = swe_manager.cli:main
