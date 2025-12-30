@@ -6,7 +6,6 @@ swe_manager/cli.py
 swe_manager/clustering.py
 swe_manager/data_loader.py
 swe_manager/features.py
-swe_manager/manager.py
 swe_manager/preprocessing.py
 swe_manager.egg-info/PKG-INFO
 swe_manager.egg-info/SOURCES.txt

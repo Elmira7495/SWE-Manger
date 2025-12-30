@@ -20,7 +20,13 @@ def assign_agents (df):
         
         if not sub_df.empty:
             # Find the agent with the highest success rate
-            best_agent = sub_df.loc[sub_df['success_rate'].idxmax(), 'agent']
+            # best_agent = sub_df.loc[sub_df['success_rate'].idxmax(), 'agent']
+             # Find the maximum success rate
+            max_rate = sub_df['success_rate'].max()
+            # Filter agents with the maximum success rate
+            top_agents = sub_df[sub_df['success_rate'] == max_rate]
+            # Randomly select one if multiple
+            best_agent = top_agents.sample(1)['agent'].values[0]
         else:
             best_agent = None  # or some default/fallback agent
         
